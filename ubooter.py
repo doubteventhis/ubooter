@@ -219,8 +219,7 @@ def dump_memory(ser):
             percent = total_dumped / total * 100
             print(f"\rProgress: {display_dumped:#x}/{end_address:#x} ({percent:.1f}%)", end='', flush=True)
 
-    print("\n[+] Dump complete")
-    print(f'[*] Converting to binary, saving output to {file_name}.bin')
+    print(f"\n[+] Dump complete, saving output to {file_name}.bin')
 
     bin_data = bytearray()
 
